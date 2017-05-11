@@ -1,0 +1,33 @@
+C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\Dao.exe.config
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\bin\Debug\Dao.exe.config
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao.csprojResolveAssemblyReference.cache
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\MainWindow.baml
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\MainWindow.g.cs
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\App.g.cs
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao_MarkupCompile.cache
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao.g.resources
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao.Properties.Resources.resources
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao.csproj.GenerateResource.Cache
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\bin\Debug\Dao.exe
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\bin\Debug\Dao.pdb
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao.exe
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao.pdb
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Alejandro Aguilar\ENDE\3 Trimestre\Proyectos\Dao\Dao\obj\Debug\Dao_MarkupCompile.lref
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.exe
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.pdb
+C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\Dao.exe
+C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\Dao.pdb
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\App.g.cs
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao_MarkupCompile.cache
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao_MarkupCompile.lref
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.g.resources
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\System.Data.SQLite.dll
+C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\System.Data.SQLite.pdb
+C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\System.Data.SQLite.xml
