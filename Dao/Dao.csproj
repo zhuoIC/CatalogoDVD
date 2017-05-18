@@ -64,6 +64,7 @@
     <Compile Include="CatalogoVM.cs" />
     <Compile Include="DaoDVDSQLite.cs" />
     <Compile Include="IDAO.cs" />
+    <Compile Include="ListadoDVd.cs" />
     <Compile Include="RelayComand.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

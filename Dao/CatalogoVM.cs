@@ -12,6 +12,7 @@ namespace Dao
 {
     class CatalogoVM:INotifyPropertyChanged
     {
+        // https://www.codeproject.com/articles/30905/WPF-DataGrid-Practical-Examples#layered_updates
 
         #region campos
         IDAO _dao;
