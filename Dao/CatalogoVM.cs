@@ -18,9 +18,46 @@ namespace Dao
         bool _tipoConexion = true; //Mysql: true, Sqlite: False
         ObservableCollection<Dvd> _listado;
         string _mensaje = "Sin datos";
+        string _nombrePais = "<sin identificar>";
+
+
+        Dvd _dvd;
         #endregion
 
         #region propiedades
+
+        public Dvd DVDSeleccionado
+        {
+            get { return _dvd; }
+            set
+            {
+                if (_dvd != value)
+                {
+                    _dvd = value;
+                    if (_dao.Conectado() && _dvd != null)
+                    {
+                        NombrePais = _dao.SeleccionarPais(_dvd.Pais).Nombre;
+                    }
+                    else
+                    {
+                        NombrePais = "<sin identificar>";
+                    }
+                    NotificarCambioDePropiedad("DVDNoSeleccionado");
+                }
+            }
+        }
+
+        public bool DVDNoSeleccionado
+        {
+            get { return DVDSeleccionado != null; }
+        }
+
+        public string NombrePais
+        {
+            get { return _nombrePais; }
+            set { _nombrePais = value; }
+        }
+
         public string Mensaje
         {
             get { return _mensaje; }
@@ -59,6 +96,14 @@ namespace Dao
                 {
                     return _dao.Conectado();
                 }
+            }
+        }
+
+        public bool NoConectado
+        {
+            get
+            {
+                return !Conectado;
             }
         }
 
@@ -122,8 +167,8 @@ namespace Dao
                 else//SqLite
                 {
                     _dao = new DaoDVDSQLite();
-                    _dao.Conectar("localhost", "catalogo", "usr_catalogo", "12345678");
-                    Mensaje = "Conectado a MySQL / MariaDB";
+                    _dao.Conectar(null, "catalogo.db", null, null);
+                    Mensaje = "Conectado a SQLite";
                 }
             }
             catch (Exception e)
@@ -132,6 +177,7 @@ namespace Dao
             }
             NotificarCambioDePropiedad("ColorConectar");
             NotificarCambioDePropiedad("Conectado");
+            NotificarCambioDePropiedad("NoConectado");
         }
         private void DesconectarBD()
         {
@@ -140,6 +186,7 @@ namespace Dao
             Listado = null;
             NotificarCambioDePropiedad("ColorConectar");
             NotificarCambioDePropiedad("Conectado");
+            NotificarCambioDePropiedad("NoConectado");
         }
 
         public void LeerTodosDVD()
@@ -150,9 +197,39 @@ namespace Dao
             }
             else
             {
-                Listado = 
+                Listado = _dao.Seleccionar(null);
             }
             Mensaje = "Datos cargados";
+        }
+
+        public void BorrarDVD()
+        {
+            if (DVDSeleccionado != null) // Mysql vs SQlite
+            {
+                if (_dao.Borrar(DVDSeleccionado)==1)
+                {
+                    Mensaje = "DVD eliminado correctamente";
+                }
+                else
+                {
+                    Mensaje = "Error al intentar eliminar el DVD";
+                }
+            }
+        }
+
+        public void ActualizarDVD()
+        {
+            if (DVDSeleccionado != null) // Mysql vs SQlite
+            {
+                if (_dao.Actualizar(DVDSeleccionado) == 1)
+                {
+                    Mensaje = "DVD actualizado correctamente";
+                }
+                else
+                {
+                    Mensaje = "Error al intentar actualizar el DVD";
+                }
+            }
         }
 
         public ICommand ConectarBD_Click // Implementacion de ICommand
@@ -176,6 +253,23 @@ namespace Dao
             get
             {
                 return new RelayComand(o => LeerTodosDVD(), o => true);
+            }
+
+        }
+        public ICommand Borrar_Click // Implementacion de ICommand
+        {
+            get
+            {
+                return new RelayComand(o => BorrarDVD(), o => true);
+            }
+
+        }
+
+        public ICommand Actualizar_Click // Implementacion de ICommand
+        {
+            get
+            {
+                return new RelayComand(o => ActualizarDVD(), o => true);
             }
 
         }

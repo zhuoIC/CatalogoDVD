@@ -11,6 +11,8 @@ namespace Dao
         DataTable SeleccionarTB(string codigo);
         ObservableCollection<Dvd> Seleccionar(string codigo);
         ObservableCollection<Dvd> SeleccionarPA(string codigo);
-        int Borrar(string codigo);
+        Pais SeleccionarPais(string iso2);
+        int Borrar(Dvd unDvd);
+        int Actualizar(Dvd unDvd);
     }
 }

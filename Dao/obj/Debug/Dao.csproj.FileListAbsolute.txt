@@ -29,5 +29,4 @@ C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.g.resources
 C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.Properties.Resources.resources
 C:\Users\Usuario\Desktop\Dao\Dao\obj\Debug\Dao.csproj.GenerateResource.Cache
 C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\System.Data.SQLite.dll
-C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\System.Data.SQLite.pdb
 C:\Users\Usuario\Desktop\Dao\Dao\bin\Debug\System.Data.SQLite.xml
